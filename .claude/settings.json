@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx supabase *)",
+      "Read(//c/Users/tobil/.supabase/**)",
+      "Read(//c/Users/tobil/.config/**)",
+      "Read(//c/Users/tobil/AppData/Roaming/**)",
+      "Read(//c/Users/tobil/**)",
+      "Read(//c//**)",
+      "Bash(mkdir -p /c/Users/tobil/Desktop/Dev/HerPath/supabase/migrations *)",
+      "Bash(curl -sf http://localhost:5173)",
+      "Bash(npm ls *)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(SCRATCH=\"/c/Users/tobil/AppData/Local/Temp/claude/c--Users-tobil-Desktop-Dev-HerPath/50e934fb-ad32-47a5-8bc2-35cb334ad814/scratchpad\" *)",
+      "Read(//c/Users/tobil/AppData/Local/Temp/claude/c--Users-tobil-Desktop-Dev-HerPath/50e934fb-ad32-47a5-8bc2-35cb334ad814/scratchpad/**)",
+      "Bash(npx playwright *)",
+      "Bash(SCRATCH=/c/Users/tobil/AppData/Local/Temp/claude/c--Users-tobil-Desktop-Dev-HerPath/50e934fb-ad32-47a5-8bc2-35cb334ad814/scratchpad node test_signup.mjs)",
+      "Bash(npm info *)",
+      "Bash(npx vitest *)",
+      "Bash(npx oxlint *)",
+      "Bash(SCRATCH=/c/Users/tobil/AppData/Local/Temp/claude/c--Users-tobil-Desktop-Dev-HerPath/50e934fb-ad32-47a5-8bc2-35cb334ad814/scratchpad node /c/Users/tobil/AppData/Local/Temp/claude/c--Users-tobil-Desktop-Dev-HerPath/50e934fb-ad32-47a5-8bc2-35cb334ad814/scratchpad/test_full_flow2.mjs)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\tobil\\Desktop\\Dev\\HerPath\\supabase"
+    ]
+  }
+}
