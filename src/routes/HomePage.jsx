@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import { useAuth } from '@/features/auth/AuthProvider'
-import { useProfile } from '@/features/profile/useProfile'
 import { useGrowthAssessment } from '@/features/assessment/useGrowthAssessment'
+import { ReadingSection } from '@/features/reading/ReadingSection'
 import { GROWTH_PATH_NAMES } from '@/lib/growthPaths'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -65,7 +66,6 @@ function GrowthFocusSection() {
 
 export function HomePage() {
   const { user, signOut } = useAuth()
-  const { data: profile, isLoading, isError, error } = useProfile()
 
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col gap-4 p-6">
@@ -76,22 +76,16 @@ export function HomePage() {
         </Button>
       </div>
 
-      <p className="text-sm text-muted-foreground">Signed in as {user?.email}</p>
+      <div className="flex items-center justify-between">
+        <p className="text-sm text-muted-foreground">Signed in as {user?.email}</p>
+        <Link to="/settings" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
+          Settings
+        </Link>
+      </div>
 
       <GrowthFocusSection />
 
-      <div className="rounded-lg border p-4">
-        <h2 className="mb-2 font-medium">Profile (from `profiles` table)</h2>
-        {isLoading && <p className="text-sm text-muted-foreground">Loading profile…</p>}
-        {isError && (
-          <p className="text-sm text-destructive">
-            {error?.message ?? 'Could not load profile.'}
-          </p>
-        )}
-        {profile && (
-          <pre className="overflow-x-auto text-xs">{JSON.stringify(profile, null, 2)}</pre>
-        )}
-      </div>
+      <ReadingSection />
     </div>
   )
 }

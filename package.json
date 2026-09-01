@@ -10,14 +10,17 @@
     "cap:sync": "cap sync",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "seed:books": "node --env-file=.env scripts/seed-books.js"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@capacitor/android": "^8.5.0",
+    "@capacitor/browser": "^8.0.4",
     "@capacitor/camera": "^8.2.2",
     "@capacitor/core": "^8.5.0",
     "@capacitor/ios": "^8.5.0",
+    "@capacitor/local-notifications": "^8.3.1",
     "@capacitor/network": "^8.0.1",
     "@capacitor/preferences": "^8.0.1",
     "@capacitor/push-notifications": "^8.1.2",

@@ -8,6 +8,7 @@ import { RequireAssessment } from '@/routes/RequireAssessment'
 import { SkipIfAssessed } from '@/routes/SkipIfAssessed'
 import { LoginPage } from '@/features/auth/LoginPage'
 import { HomePage } from '@/routes/HomePage'
+import { SettingsPage } from '@/routes/SettingsPage'
 import { AssessmentPage } from '@/features/assessment/AssessmentPage'
 import { initPushNotifications } from '@/lib/pushNotifications'
 
@@ -29,6 +30,7 @@ function App() {
               </Route>
               <Route element={<RequireAssessment />}>
                 <Route path="/home" element={<HomePage />} />
+                <Route path="/settings" element={<SettingsPage />} />
               </Route>
             </Route>
             <Route path="*" element={<Navigate to="/home" replace />} />
