@@ -11,7 +11,9 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "seed:books": "node --env-file=.env scripts/seed-books.js"
+    "seed:books": "node --env-file=.env scripts/seed-books.js",
+    "seed:videos": "node --env-file=.env scripts/seed-videos.js",
+    "seed:articles": "node --env-file=.env scripts/seed-articles.js"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

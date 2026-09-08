@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '@/features/auth/AuthProvider'
 import { useGrowthAssessment } from '@/features/assessment/useGrowthAssessment'
 import { ReadingSection } from '@/features/reading/ReadingSection'
+import { VideosSection } from '@/features/videos/VideosSection'
+import { ArticlesSection } from '@/features/articles/ArticlesSection'
 import { GROWTH_PATH_NAMES } from '@/lib/growthPaths'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -86,6 +88,10 @@ export function HomePage() {
       <GrowthFocusSection />
 
       <ReadingSection />
+
+      <VideosSection />
+
+      <ArticlesSection />
     </div>
   )
 }
