@@ -68,7 +68,7 @@ export function ReadingSection() {
   })
 
   if (isLoading) {
-    return <p className="text-sm text-muted-foreground">Loading your growth reading…</p>
+    return <p className="text-sm text-[#68427D]">Loading your growth reading…</p>
   }
 
   if (isError) {
@@ -77,14 +77,14 @@ export function ReadingSection() {
 
   return (
     <section className="flex flex-col gap-2">
-      <h2 className="text-sm font-medium text-muted-foreground">Your Growth Reading</h2>
+      <h2 className="text-lg font-bold text-[#D4AF6A]">Your Growth Reading</h2>
 
       {justCompletedTitle ? (
         <p className="text-sm font-medium text-primary">You finished "{justCompletedTitle}"! 🎉</p>
       ) : null}
 
       {!recommendedBook ? (
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm font-bold text-[#D4AF6A]">
           You've completed every recommended book in your growth paths!
         </p>
       ) : progress?.status === 'in_progress' ? (
